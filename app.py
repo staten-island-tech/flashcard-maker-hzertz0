@@ -18,7 +18,7 @@ try:
 except FileNotFoundError:
     questions_data = []
 
-questions_data = [Flashcard.to.dict() for flashcard in questions]
+questions_data = [Flashcard.to_dict() for flashcard in questions]
 
 with open("questions.json", "w") as file:
     json.dump(questions_data, file, indent=2)
