@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What are the sides you use to calculate sine?",
+    "answer": "Opposite/Hypotenuse"
+  },
+  {
+    "question": "What are the sides you use to calculate cosine?",
+    "answer": "Adjacent/Hypotenuse"
+  },
+  {
+    "question": "What are the sides you use to calculate tangent?",
+    "answer": "Opposite/Adjacent"
+  }
+]
