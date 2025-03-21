@@ -1,4 +1,5 @@
 import json
+import random
 
 class Flashcard:
     def __init__(self, question, answer):
@@ -14,27 +15,28 @@ class Flashcard:
             "answer": self.answer
         }
 
-questions = [
-    Flashcard("What are the sides you use to calculate sine?", "Opposite/Hypotenuse"),
-    Flashcard("What are the sides you use to calculate cosine?", "Adjacent/Hypotenuse"),
-    Flashcard("What are the sides you use to calculate tangent?", "Opposite/Adjacent")
-]
-
 try:
     with open("questions.json", "r") as file:
         questions_data = json.load(file)
-
 except FileNotFoundError:
     questions_data = []
 
-questions_data = [Flashcard.to_dict() for Flashcard in questions]
+role = input("Are you a teacher or student? ").lower()
+while True:
+    if role == "teacher":
+        question = input("Enter the question: ")
+        answer = input("Enter the answer: ")
 
-with open("questions.json", "w") as file:
-    json.dump(questions_data, file, indent=2)
+        new_flashcard = Flashcard(question, answer)
+        questions_data.append(new_flashcard.to_dict())
 
-role = input("Are you a teacher or student? ").lower
-if role() == "teacher":
-    asked = input("Input phrase & answer: ")
-if role() == "student":
+        with open("questions.json", "w") as file:
+            json.dump(questions_data, file, indent=2)
+        
+        ask = input("Would you like to add more flashcards? Yes/No: ")
+        if ask == "No":
+            break
+
+if role == "student":
     print()
 
