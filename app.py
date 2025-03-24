@@ -33,10 +33,33 @@ while True:
         with open("questions.json", "w") as file:
             json.dump(questions_data, file, indent=2)
         
-        ask = input("Would you like to add more flashcards? Yes/No: ")
-        if ask == "No":
+        ask = input("Would you like to add more flashcards? Yes/No: ").lower()
+        if ask != "yes":
             break
 
-if role == "student":
-    print()
+    if role == "student":
+        streak = 0
+        correct = 0
+        while True:
+            random_item = random.choice(questions_data)
+
+            print(random_item['question'])
+
+            answer = input("What is the answer to the question? ").lower()
+            if answer == random_item['answer'].lower():
+                streak += 1
+                correct += 1
+                print(f"You got it correct! Streak = {streak}, Total Correct Answers = {correct}")
+            else:
+                print("You got it wrong!")
+                streak = 0
+            
+            next = input("Would you like to continue? ").lower()
+            if next != "yes":
+                break
+        if next != "yes":
+            break
+    
+    if role != "student" and role != "teacher":
+        break
 
