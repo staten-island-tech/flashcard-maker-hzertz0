@@ -1,22 +1,66 @@
 [
   {
-    "question": "What are the sides you use to calculate sine?",
-    "answer": "Opposite/Hypotenuse"
-  },
-  {
-    "question": "What are the sides you use to calculate cosine?",
-    "answer": "Adjacent/Hypotenuse"
-  },
-  {
-    "question": "What are the sides you use to calculate tangent?",
-    "answer": "Opposite/Adjacent"
-  },
-  {
     "question": "What is the fourth digit of pi?",
     "answer": "1"
   },
   {
-    "question": "What is Obama's last name in real life?",
-    "answer": "idk"
+    "question": "Do employers need to have guard railings?",
+    "answer": "Yes"
+  },
+  {
+    "question": "What electrical component opposes the flow of current in a DC circuit?",
+    "answer": "Resistor"
+  },
+  {
+    "question": "Why did Grayton get angry?",
+    "answer": "His code didn't work"
+  },
+  {
+    "question": "Daniel",
+    "answer": "Sanbeg"
+  },
+  {
+    "question": "Why did David not do his work?",
+    "answer": "To read the lesson"
+  },
+  {
+    "question": "What is a common repeater frequency offset in the 2 meter band?",
+    "answer": "600 kHz"
+  },
+  {
+    "question": "What is the approximate velocity of a radio wave in free space?",
+    "answer": "300,000,000 m/s"
+  },
+  {
+    "question": "What is the meaning of life",
+    "answer": "Burrito"
+  },
+  {
+    "question": "Taco or Burrito",
+    "answer": "Taco"
+  },
+  {
+    "question": "Is Taco the meaning of life?",
+    "answer": "No"
+  },
+  {
+    "question": "What color is a orange?",
+    "answer": "Purple"
+  },
+  {
+    "question": "Why is Thor so fat in Avengers Endgame?",
+    "answer": "He got sad"
+  },
+  {
+    "question": ".",
+    "answer": "Boy"
+  },
+  {
+    "question": "Once upon a time there was a",
+    "answer": "Banana"
+  },
+  {
+    "question": "Enter a question:",
+    "answer": "Enter the answer:"
   }
 ]

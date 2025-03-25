@@ -40,6 +40,7 @@ while True:
     if role == "student":
         streak = 0
         correct = 0
+        points = 0
         while True:
             random_item = random.choice(questions_data)
 
@@ -49,9 +50,10 @@ while True:
             if answer == random_item['answer'].lower():
                 streak += 1
                 correct += 1
-                print(f"You got it correct! Streak = {streak}, Total Correct Answers = {correct}")
+                points = round(points + 1 + streak)
+                print(f"You got it correct! Streak = {streak}, Total Correct Answers = {correct}, Points = {points}")
             else:
-                print("You got it wrong!")
+                print(f"You got it wrong! The correct answer was {random_item['answer']}")
                 streak = 0
             
             next = input("Would you like to continue? ").lower()
